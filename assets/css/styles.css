@@ -1,10 +1,75 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+:root {
+    --primary-color: #337357;
+    --nav-color: white;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 /*HEADER STYLES*/
 
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+header h1 {
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+header nav {
+    margin: 7px 0;
+    padding: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--nav-color);
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 1.55vw;
+    text-shadow: 3px 3px 1px black;
+}
+
+header nav ul li a:hover {
+    background-color: #C7EFCF;
+    color: black;
+    transition: 0.5s;
+    text-shadow: none;
+    border-bottom: 5px solid black;
+}
 /*NAVIGATION STYLES*/
 
 /*SECTION STYLES (ALL SECTIONS)*/
