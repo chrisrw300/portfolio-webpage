@@ -134,6 +134,15 @@ header nav ul li a:hover {
 }
 
 /*PORTFOLIO GRID STYLES*/
+.work-grid-wrapper {
+    background-color: #C7EFCF;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 /*CONTACT ME STYLES*/
 .contact-info {
