@@ -72,9 +72,11 @@ header nav ul li a:hover {
 }
 /*NAVIGATION STYLES*/
 
+
 /*SECTION STYLES (ALL SECTIONS)*/
 .section {
-    margin: 0 20px 0 20px;
+    margin: 15px auto 0 auto;
+    width: 100%;
 }
 
 .section-title {
@@ -82,7 +84,7 @@ header nav ul li a:hover {
     border-bottom: 5px solid var(--primary-color);
     padding-bottom: 20px;
     text-align: center;
-    margin: 15px auto 15px auto;
+    margin: 0 auto;
     width: 50%;
 }
 
@@ -97,66 +99,84 @@ header nav ul li a:hover {
 
 /*ABOUT ME STYLES*/
 .about-me-info {
-    padding: 20px;
+    background-color: #C7EFCF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 100px;
+}
+
+.about-img {
+    padding-right: 50px;
+}
+
+.about-img img {
+    max-width: 400px;
+    min-width: 150px;
+    height: auto;
+    margin: 0;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.about-text {
+    font-size: 20px;
+    text-align: left;
+    width: 50%;
+    flex-wrap: wrap;
+    background-color: white;
+    line-height: 1.6;
 }
 
 .about-me-info p {
     padding: 15px;
-    background-color: #C17767;
-    width: 50%;
-    margin: 50px;
-    box-shadow: 7px 5px 5px black;
 }
 
-.about-img {
-    padding: 20px;
-}
-
-.about-img img {
-    width: 100%;
-    max-width: 300px;
-    min-width: 200px;
-    height: auto;
-    margin: 10px;
-    box-shadow: 7px 5px 5px black;
-}
-
-.about-text {
-    padding: 15px;
-    font-size: 25px;
-    text-align: left;
-    width: 50%;
-    flex-wrap: wrap;
-    background-color: #C7EFCF;
-    box-shadow: 10px 10px 5px black;
-    line-height: 1.5;
-}
-
-
-/*PORTFOLIO STYLES*/
+/*PORTFOLIO GRID STYLES*/
 
 /*CONTACT ME STYLES*/
 .contact-info {
-    padding: 20px;
     font-size: 25px;
-    width: 75%;
-    background-color: #C7EFCF;
-    box-shadow: 10px 10px 5px black;
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #C7EFCF;
+    padding: 100px;
 }
-/*
+
 .contact-info h3 {
+    margin: 10px;
+    padding-right: 15px;
 }
-*/
-.contact-info ul li, .contact-info ul li p {
-    display: inline;
-    padding: 10px;
+
+.contact-info ul {
+    padding: 15px;
+}
+
+.contact-info ul li {
+    list-style: none;
+    text-align: left;
 }
 
 .contact-info ul li a {
     text-decoration: none;
 }
+
+
 /*FOOTER STYLES*/
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 5px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.55vw;
+}
+
