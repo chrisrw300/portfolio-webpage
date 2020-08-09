@@ -41,6 +41,7 @@ header h1 a {
     color: var(--nav-color);
 }
 
+/*NAVIGATION STYLES*/
 header nav {
     margin: 7px 0;
     padding: auto;
@@ -70,7 +71,7 @@ header nav ul li a:hover {
     text-shadow: none;
     border-bottom: 5px solid black;
 }
-/*NAVIGATION STYLES*/
+
 
 
 /*SECTION STYLES (ALL SECTIONS)*/
@@ -183,7 +184,7 @@ header nav ul li a:hover {
 }
 
 .work-2 {
-    background-image: url("../images/momo.jpg");
+    background-image: url("../images/sky.jpg");
 }
 
 .work-3 {
@@ -301,3 +302,105 @@ footer {
     font-size: 1.55vw;
 }
 
+/*MEDIA QUERIES STYLES*/
+
+@media screen and (max-width: 980px) {
+    /*NAVIGATION STYLES*/
+    header nav ul li a {
+        font-size: 2vw;
+    }
+
+    /*ABOUT ME STYLES*/
+    .about-text {
+        text-align: center;
+        width: 85%;
+        margin-top: 15px;
+    }
+
+    /*PORTFOLIO STYLES*/
+    .work-grid-container {
+        width: 90%;
+    }
+
+    .grid-img::after {
+        opacity: 0;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    /*HEADER AND NAVIGATION STYLES*/
+    header nav {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    header nav ul li a {
+        font-size: 2.5vw;
+    }
+
+    /*ABOUT ME STYLES*/
+    .about-me-info {
+        padding: 50px;
+    }
+
+    .about-text {
+        text-align: center;
+        width: 95%;
+        margin-top: 15px;
+    }
+
+    .about-img {
+        padding-right: 0;
+    }
+
+    /*PORTFOLIO STYLES*/
+    .work-grid-container {
+        display: grid;
+        background-color: #C7EFCF;
+        padding: 15px;
+        width: 100%;
+        grid-template-columns: 1fr repeat(3, 4fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 15px;
+        font-size: 1.2rem;
+    }
+
+    .grid-img {
+        width: 100%;
+        background-position: center;
+    }
+
+    /*CONTACT ME STYLES*/
+    .contact-info {
+        display: block;
+        padding: 50px;
+    }
+    
+    .contact-info h3 {
+        margin-right: 10px;
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .contact-info ul {
+        padding: 15px;
+    }
+    
+    .contact-info ul li {
+        list-style: none;
+        text-align: center;
+    }
+    
+    .contact-info ul li a {
+        text-decoration: none;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    /*NAVIGATION STYLES*/
+    header nav ul li a {
+        font-size: 3vw;
+    }
+}
