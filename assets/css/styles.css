@@ -135,10 +135,9 @@ header nav ul li a:hover {
 
 /*PORTFOLIO GRID STYLES*/
 .work-grid-wrapper {
-    /*padding: 100px;*/
     display: flex;
     justify-content: center;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -152,32 +151,6 @@ header nav ul li a:hover {
     grid-gap: 15px;
     font-size: 1.2rem;
 }
-
-.grid-item {
-
-}
-
-/*.grid-item {
-    display: flex;
-    border: thin solid black;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 100px;
-}*/
-
-/*
-.grid-title {
-    padding: 5px 10px;
-    width: 50%;
-    font-size: 15px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.5)
-}*/
 
 .grid-img {
     width: 100%;
@@ -193,16 +166,16 @@ header nav ul li a:hover {
     content: "";
     height: 100%;
     width: 100%;
-    background: linear-gradient( rgb(252, 225, 56, 0.3), black);
+    background: linear-gradient(rgb(0,0,0,0.5), rgb(199, 239, 207, 0.7));
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
-    transition: 0.5s;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .grid:hover .grid-img::after {
-    opacity: 1;
+    opacity: 0;
 }
 
 .work-1 {
@@ -225,6 +198,14 @@ header nav ul li a:hover {
     background-image: url("../images/deer.jpg");
 }
 
+.grid-title {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: right;
+    z-index: 1;
+}
+
 .grid-item-1 {
     display: flex;
     flex-wrap: wrap;
@@ -234,60 +215,46 @@ header nav ul li a:hover {
     grid-column: 1 / span 3;
     grid-row: 1 / 2;
 }
-/*
-.work-grid-item-1 {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url("../images/momo.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    grid-column: 4;
-    grid-row: 1 / 1;
-}
 
-.work-grid-item-2 {
+.grid-item-2 {
     display: flex;
     flex-wrap: wrap;
-    background-image: url("../images/camera.jpg");
     background-size: cover;
-    background-position: center;
     height: 100%;
     width: 100%;
     grid-column: 1 / span 2;
     grid-row: 2 / 2;
 }
 
-.work-grid-item-3 {
+.grid-item-3 {
     display: flex;
     flex-wrap: wrap;
-    background-image: url("../images/plant.jpg");
     background-size: cover;
-    background-position: center;
     height: 100%;
     width: 100%;
     grid-column: 3 / span 1;
     grid-row: 2 / 2;
 }
 
-.work-grid-item-4 {
+.grid-item-4 {
     display: flex;
     flex-wrap: wrap;
-    background-image: url("../images/deer.jpg");
     background-size: cover;
-    background-position: center;
     height: 100%;
     width: 100%;
     grid-column: 4 / span 1;
+    grid-row: 1 / 2;
+}
+
+.grid-item-5 {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    grid-column: 4/ span 1;
     grid-row: 2 / 2;
 }
-
-.work-grid-item.other-work {
-    background-color: red;
-}
-*/
-
 
 /*CONTACT ME STYLES*/
 .contact-info {
